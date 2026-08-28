@@ -1,0 +1,11 @@
+f = set()
+c = 0
+g = set()
+for _ in range(int(input())): # (написать фамилию) и сразу же осуществлять проверку на принадлежность в множестве, если есть то какое-то число +1
+        famil = input()
+        if famil in f:
+            c = c + 1
+            g.add(famil)
+        else:
+            f.add(famil)    
+print(c+len(g))            
