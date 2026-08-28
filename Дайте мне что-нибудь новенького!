@@ -1,0 +1,16 @@
+N = int(input())
+
+dishes = set()
+daily = set()
+
+for _ in range(N):
+    dishes.add(input())
+
+days = int(input())
+
+for _ in range(days):
+    day = int(input())
+    for _ in range(day):
+        daily.add(input())
+
+print('\n'.join(dishes - daily))
