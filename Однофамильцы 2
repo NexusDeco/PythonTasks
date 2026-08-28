@@ -1,0 +1,15 @@
+N = int(input())
+people = {}
+for _ in range(N):
+    man = input()
+    if man in people:
+        people[man] = people[man] + 1
+    else:
+        people[man] = 1
+c = 0
+for man in people:
+    if people[man] > 1:
+        print(f"{man} - {people[man]}")   
+        c = c + 1
+if c == 0:
+    print("нет")         
