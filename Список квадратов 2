@@ -1,0 +1,5 @@
+a, b = int(input()), int(input())
+
+numbers = (i*i for i in (range(a, b+1) if b >= a else range(a, b-1, -1)))
+
+print(list(numbers))
