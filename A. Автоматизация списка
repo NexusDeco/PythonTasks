@@ -1,0 +1,2 @@
+for index, word in enumerate(input().split(), 1):
+    print(f'{index}. {word}')
