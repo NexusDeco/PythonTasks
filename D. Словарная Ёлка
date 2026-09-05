@@ -1,0 +1,6 @@
+from itertools import accumulate
+
+objects = list(map(str, input().split()))
+
+for word in accumulate(objects):
+    print(word)
