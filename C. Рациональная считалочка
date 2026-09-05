@@ -1,0 +1,9 @@
+from itertools import count
+
+a, b, c = list(map(float, input().split()))
+
+for number in count(a, c):
+    if number <= b:
+        print(f'{number:.2f}')
+    else:
+        break    
