@@ -1,0 +1,12 @@
+from sys import stdin
+
+roundint = 0
+count = 0
+
+for line in stdin:
+    lines = list(line.rstrip("\n").split())
+    roundint += int(lines[2]) - int(lines[1])
+    count += 1
+print(round(roundint/count))  
+
+
