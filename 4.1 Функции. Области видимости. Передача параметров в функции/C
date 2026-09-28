@@ -1,0 +1,2 @@
+def number_lenth(password):
+    return len(str(abs(password)))
