@@ -1,0 +1,8 @@
+points = 0
+
+def get_count():
+    return points
+
+def click():
+    global points
+    points += 1
